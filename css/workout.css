@@ -1,0 +1,394 @@
+.btn2 {
+    background-color: #f4511e;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    border-radius: 2px;
+    margin-left: auto;
+    opacity: 0.6;
+    transition: 0.3s;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom:100px;
+}
+
+    .btn:hover {
+        opacity: 1
+    }
+
+
+
+#progress-bar-container {
+    width: 80%;
+    background-color: #f0f0f0;
+    height: 10px; /* Updated height to make it shorter */
+    overflow: hidden; /* Added to hide the curved ends of the progress bar */
+    border-radius: 5px;
+    margin-left: 30px;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #ffA500; /* Updated color to orange */
+    background-image: radial-gradient(#ffA500, #f00); /* Added swirling color effect */
+   
+    
+}
+
+#progress-bar-container-firstshooting {
+    width: 80%;
+    background-color: #f0f0f0;
+    height: 10px; /* Updated height to make it shorter */
+    overflow: hidden; /* Added to hide the curved ends of the progress bar */
+    border-radius: 5px;
+    margin-left: 30px;
+}
+
+#progress-bar-firstshooting {
+    height: 100%;
+    width: 0;
+    background-color: #ffA500; /* Updated color to orange */
+    background-image: radial-gradient(#ffA500, #f00); /* Added swirling color effect */
+}
+
+#progress-bar-container-test {
+    width: 80%;
+    background-color: #f0f0f0;
+    height: 10px; /* Updated height to make it shorter */
+    overflow: hidden; /* Added to hide the curved ends of the progress bar */
+    border-radius: 5px;
+    margin-left: 30px;
+}
+
+#progress-bar-test {
+    height: 100%;
+    width: 0;
+    background-color: #ffA500; /* Updated color to orange */
+    background-image: radial-gradient(#ffA500, #f00); /* Added swirling color effect */
+}
+
+#progress-bar-container-handles {
+    width: 80%;
+    background-color: #f0f0f0;
+    height: 10px; /* Updated height to make it shorter */
+    overflow: hidden; /* Added to hide the curved ends of the progress bar */
+    border-radius: 5px;
+    margin-left: 30px;
+}
+
+#progress-bar-handles {
+    height: 100%;
+    width: 0;
+    background-color: #ffA500; /* Updated color to orange */
+    background-image: radial-gradient(#ffA500, #f00); /* Added swirling color effect */
+}
+
+
+
+.header2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fdf2e9;
+    /* Because we want header to be sticky later */
+    height: 9.6rem;
+    padding: 0 4.8rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.maininfo {
+    /* Add margin top equal to height of header */
+    margin-top: 9.6rem;
+    margin-left: 300px; /* Same as the width of the sidenav */
+    font-size: 18px; /* Increased text to enable scrolling */
+    padding: 0px 100px;
+    
+    
+    display: flex;
+
+    
+    flex-direction: column;
+    /*
+    align-items: center;
+    justify-content: center;
+    text-align: center; */
+}
+    .maininfo img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        
+    /* Add more styles as needed */
+    }
+
+    .maininfo h1 {
+        margin-top: 40px;
+        margin-bottom: 40px; /* Add spacing below h1 element */
+    }
+    .maininfo h2 {
+
+        margin-top: 20px;
+    }
+
+    .maininfo h4{
+        margin-bottom: 10px;
+    }
+
+    .maininfo p {
+        margin-bottom: 30px; /* Add spacing below p element */
+    }
+
+    .maininfo ul {
+        margin-bottom: 30px;
+    }
+
+
+.bullet {
+    padding-left: 40px; /* Adjust the value to increase or decrease the indentation */
+}
+
+
+
+body {
+    font-family: "Lato", sans-serif;
+    font: bold;
+}
+
+/* Sidebar styles */
+.sidenav {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 9.6rem;
+    left: 0;
+    background-color: #F8F9FA; /* Light grayish background color */
+    overflow-x: hidden;
+    max-height: calc(100vh - 9.6rem);
+    overflow-y: auto;
+    padding-top: 20px;
+}
+
+    .sidenav img {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+        margin-left: 30px;
+        /* Add more styles as needed */
+    }
+
+    .sidenav a,
+    .dropdown-btn {
+        padding: 12px 16px; /* Increased padding for better spacing */
+        text-decoration: none;
+        font-size: 16px;
+        font-family: Arial, sans-serif; /* Change font */
+        color: #333; /* Dark gray text color */
+        display: block;
+        border: none;
+        background: #F8F9FA; /* Light grayish background color */
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
+        border-bottom: 1px solid #E0E0E0; /* Add bottom border line */
+    }
+
+        .sidenav a:last-child,
+        .dropdown-btn:last-child {
+            border-bottom: none; /* Remove bottom border for last link/button */
+        }
+
+        .sidenav a:hover,
+        .dropdown-btn:hover {
+            color: #007BFF; /* Blue color on mouse-over */
+        }
+
+/* Animated button styles */
+.icon-container {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin-right: 8px;
+}
+
+    .icon-container i {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: transform 0.3s ease-in-out;
+    }
+
+        .icon-container i:last-child {
+            opacity: 0;
+        }
+
+.dropdown-item.active .icon-container i:first-child {
+    transform: rotate(45deg);
+}
+
+.dropdown-item.active .icon-container i:last-child {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+    background-color: lightgrey;
+    color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color: #262626;
+    
+    border-top: 1px solid #E0E0E0; /* Add top border line */
+    border-bottom: 1px solid #E0E0E0; /* Add bottom border line */
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.quiz-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+    width: 800px;
+    overflow: hidden;
+    
+    
+}
+    .quiz-container h2 {
+        padding: 1rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    .quiz-container ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+        .quiz-container ul li {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+
+            .quiz-container ul li label{
+                cursor: pointer;
+            }
+
+
+
+
+
+.quiz-header {
+    padding: 4rem;
+}
+
+
+
+button2 {
+    background-color: #fc7830;
+    color: #fff;
+    border: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: inherit;
+    padding: 1.3rem;
+}
+
+    button2:hover {
+        background-color: orange;
+    }
+
+    button2:focus {
+        outline: none;
+        background-color: orange;
+    }
+
+/* CSS File */
+
+/* Set border color to orange */
+.panel {
+    border: 5px orange;
+}
+
+/* Set margin for container */
+.container {
+    margin-top: 20px;
+}
+
+/* Set color, size, and padding for panel heading */
+.panel-heading {
+    background-color: orange;
+    color: white;
+    font-size: 1.5em; /* Update to desired text size */
+    padding: 10px; /* Update to desired padding */
+}
+
+/* Set margin for loading spinner */
+.loading {
+    margin-top: 20px;
+}
+
+/* Set visibility and margin for control5 div */
+.control5 {
+    visibility: hidden;
+    margin-top: 20px;
+}
+
+/* Set size for input video */
+.input_video5 {
+    max-width: 100%; /* Update to desired video size */
+    height: auto;
+}
+
+/* Set size for output canvas */
+.output5 {
+    max-width: 100%; /* Update to desired canvas size */
+    height: auto;
+    width: 460px; /* Update to desired canvas size */
+    height: 365px; /* Update to desired canvas size */
+}
+
+/* Set columns to be side by side */
+.columns {
+    display: flex;
+}
+
+/* Set width for each 
